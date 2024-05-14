@@ -1,5 +1,5 @@
 import createIntlMiddleware from "next-intl/middleware";
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 import { AppConfig } from "./utils/app-config";
 
 const T4_AUTH = {
@@ -22,10 +22,8 @@ export default async function middleware(request: NextRequest) {
 
   const isMatchAuthPath = AUTH_PATH[`/${segments}`];
   const isMatchPath = PATH_NEED_LOGIN.find((path: string) =>
-    request.nextUrl.pathname.includes(`${locale}${path}`)
+    request.nextUrl.pathname.includes(`${locale}${path}`),
   );
-
-  console.log({ url: request.nextUrl.pathname, isMatchAuthPath, isMatchPath });
 
   const intlMiddleware = createIntlMiddleware({
     locales: AppConfig.locales,
@@ -45,5 +43,12 @@ export default async function middleware(request: NextRequest) {
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ["/", "/(en|vi)/:path*"],
+  // matcher: ["/", "/(en|vi)/:path*"],
+  matcher: [
+    "/((?!.+\\.[\\w]+$|_next).*)",
+    "/",
+    "/(api|trpc)(.*)",
+    "/",
+    "/(en|vi)/:path*",
+  ],
 };
