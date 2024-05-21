@@ -1,0 +1,7 @@
+.input-search-scoutlens {
+  .ant-input {
+    &::placeholder {
+      @apply text-neutral-50;
+    }
+  }
+}

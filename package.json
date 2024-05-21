@@ -12,6 +12,8 @@
     "@ant-design/nextjs-registry": "^1.0.0",
     "@hookform/resolvers": "^3.3.4",
     "@t3-oss/env-nextjs": "^0.10.1",
+    "@tabler/icons": "^3.3.0",
+    "@tabler/icons-react": "^3.3.0",
     "@tanstack/react-query": "^5.36.0",
     "@web3modal/wagmi": "^4.1.11",
     "antd": "^5.17.0",
@@ -38,14 +40,15 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "jiti": "^1.21.0",
+    "lokijs": "^1.5.12",
+    "pino-pretty": "^10.3.1",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
+    "supports-color": "^9.4.0",
     "tailwindcss": "^3.4.3",
     "typescript": "^5",
-    "lokijs": "^1.5.12",
-    "pino-pretty": "^10.3.1",
-    "supports-color": "^9.4.0",
-    "utf-8-validate": "^6.0.3"
+    "utf-8-validate": "^6.0.3",
+    "sass": "^1.77.2"
   }
 }

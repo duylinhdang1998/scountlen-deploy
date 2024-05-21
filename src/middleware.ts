@@ -1,5 +1,5 @@
 import createIntlMiddleware from "next-intl/middleware";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { AppConfig } from "./utils/app-config";
 
 const T4_AUTH = {
@@ -28,6 +28,8 @@ export default async function middleware(request: NextRequest) {
   const intlMiddleware = createIntlMiddleware({
     locales: AppConfig.locales,
     defaultLocale: AppConfig.defaultLocale,
+    localeDetection: false,
+    localePrefix: "as-needed",
   });
 
   if (token && isMatchAuthPath) {

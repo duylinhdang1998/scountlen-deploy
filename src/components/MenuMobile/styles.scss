@@ -1,0 +1,13 @@
+.drawer-mobile {
+  .ant-drawer-header {
+    .ant-drawer-close {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .ant-drawer-body {
+    padding-left: 24px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}

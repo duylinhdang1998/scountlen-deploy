@@ -8,20 +8,22 @@ const withTheme = (node: JSX.Element) => (
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "#52c41a",
+          colorPrimary: "#FF57C1",
           fontFamily: "inherit",
+        },
+        components: {
+          Input: {
+            activeBorderColor: "blue",
+            activeShadow: "transparent",
+            colorTextPlaceholder: "#969A9C",
+          },
+          Table: {
+            rowHoverBg: "transparent",
+          },
         },
       }}
     >
-      <ConfigProvider
-        theme={{
-          token: {
-            borderRadius: 16,
-          },
-        }}
-      >
-        {node}
-      </ConfigProvider>
+      {node}
     </ConfigProvider>
   </>
 );

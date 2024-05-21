@@ -1,5 +1,8 @@
 {
   "Home": {
     "title": "Xin chào"
-  }
+  },
+  "token_data": "Token data",
+  "pair_data": "Pair data",
+  "trade_data": "Trade data"
 }

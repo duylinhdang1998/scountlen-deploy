@@ -1,0 +1,26 @@
+.custom-tabs {
+  .ant-tabs-nav {
+    margin: 0 !important;
+    &::before {
+      display: none !important;
+    }
+  }
+  .ant-tabs-tab-btn:focus {
+    @apply text-primary  #{!important};
+  }
+  .ant-tabs-tab {
+    border-radius: 8px 8px 0px 0px !important;
+    width: 260px !important;
+    height: 60px !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    @apply border-none bg-alpha-neutral text-xl text-neutral-50 #{!important};
+  }
+  .ant-tabs-tab-active {
+    @apply bg-neutral-90 text-xl  #{!important};
+    .ant-tabs-tab-btn {
+      @apply text-neutral-50 #{!important};
+    }
+  }
+}

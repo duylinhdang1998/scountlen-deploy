@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+.bg-img-home {
+  background-image: url("/img/bg-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+.text-gradient-primary {
+  background: linear-gradient(90deg, #ff57c1 -818.19%, #bc30e3 540.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

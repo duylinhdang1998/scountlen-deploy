@@ -1,5 +1,37 @@
 {
   "Home": {
-    "title": "Hello world!"
-  }
+    "title": "Hello world!",
+    "search_by_name": "Search by name or paste address",
+    "search": "Search",
+    "enrich_your_products": "Enrich your products with our data",
+    "apis": "APIs",
+    "web_socket": "Web socket",
+    "iFrame": "iFrame",
+    "price_bots": "Price bots",
+    "details_pricing": "Details & Pricing  Documentation",
+    "trusted_by_the_best": "Trusted by the best",
+    "get_it_touch": "Get it touch",
+    "join_our_community": "Join Our Community",
+    "visit_our_social": "Visit our Social Channel",
+    "documentations": "Documentations",
+    "privacy_police": "Privacy Police",
+    "term_of_services": "Term of Service",
+    "disclaimer": "Disclaimer",
+    "terms_of_use": "Terms of use",
+    "privacy_policy": "Privacy policy",
+    "trending_tokens": "Trending Tokens",
+    "find_gems": "Find Gems",
+    "new_listings": "New Listtings",
+    "top_traders": "Top Traders",
+    "token": "Token",
+    "price": "Price",
+    "24h_vol": "24H vol",
+    "24h_traders": "24H Traders"
+  },
+  "token_data": "Token data",
+  "pair_data": "Pair data",
+  "trade_data": "Trade data",
+  "web3_login": "Web 3 Login",
+  "show_pairs_number_of_total": "Showing pairs {number} of {total}",
+  "pairs": "Pairs"
 }
